@@ -1,0 +1,16 @@
+--- 
+applications: 
+  .: 
+    name: qmsu
+    framework: 
+      name: sinatra
+      info: 
+        mem: 128M
+        description: Sinatra Application
+        exec: ruby hello.rb
+    url: ${name}.${target-base}
+    mem: 128M
+    instances: 1
+    services: 
+      mysql-qms: 
+        type: mysql

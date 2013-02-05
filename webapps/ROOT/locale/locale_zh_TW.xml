@@ -1,0 +1,14 @@
+﻿<locale>  
+  <!--locale definition>
+  <s key="English">英語</s>
+  <s key="Simplified Chinese">簡體中文</s>
+  <s key="Traditional Chinese">繁體中文</s-->
+  
+  <s key="English">English</s>
+  <s key="Simplified Chinese">简体中文</s>
+  <s key="Traditional Chinese">繁體中文</s>
+  
+  <s key="NomoralFontSize">12</s>
+  <s key="NomoralFontWeight">normal</s>
+  <s key="Login User">Login User (Alias):</s>
+</locale>

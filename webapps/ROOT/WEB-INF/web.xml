@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Test Socket</display-name>
+	
+	<context-param>
+        <param-name>flex.class.path</param-name>
+        <param-value>/WEB-INF/flex/hotfixes</param-value>
+    </context-param>
+    
+    <!-- Http Flex Session attribute and binding listener support -->
+    <listener>
+        <listener-class>flex.messaging.HttpFlexSession</listener-class>
+    </listener>
+    
+    <!--  Cloud support -->
+    <listener>
+        <listener-class>com.adobe.qms.cloud.CloudListener</listener-class>
+    </listener>
+
+    <!-- MessageBroker Servlet -->
+    <servlet>
+        <display-name>MessageBrokerServlet</display-name>
+        <servlet-name>MessageBrokerServlet</servlet-name>
+        <servlet-class>flex.messaging.MessageBrokerServlet</servlet-class>
+        <init-param>
+            <param-name>services.configuration.file</param-name>
+            <param-value>/WEB-INF/flex/services-config.xml</param-value>
+       </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+	<servlet>  
+       <servlet-name>ServiceServlet</servlet-name>  
+       <servlet-class>sver.ServiceServlet</servlet-class>
+       <!--<load-on-startup>1</load-on-startup>-->
+ 	</servlet>
+ 	
+	<servlet>  
+       <servlet-name>IpInfoServlet</servlet-name>  
+       <servlet-class>com.adobe.qms.servlet.IpInfoServlet</servlet-class>
+       <load-on-startup>1</load-on-startup>
+ 	</servlet>
+ 	
+	<servlet>  
+       <servlet-name>VideoAdapterServlet</servlet-name>  
+       <servlet-class>com.adobe.qms.servlet.VideoAdapterServlet</servlet-class>
+       <load-on-startup>1</load-on-startup>
+ 	</servlet>
+ 	
+	<servlet>  
+       <servlet-name>MachineInfoServlet</servlet-name>  
+       <servlet-class>restool.servlet.MachineInfoServlet</servlet-class>
+       <load-on-startup>1</load-on-startup>
+ 	</servlet>
+ 	
+ 	<servlet>  
+       <servlet-name>ActionListenServlet</servlet-name>  
+       <servlet-class>restool.servlet.ActionListenServlet </servlet-class>
+ 	</servlet>
+ 	<servlet>
+ 		<servlet-name>DbLogServlet</servlet-name>
+ 		<servlet-class>restool.servlet.DbLogServlet</servlet-class>
+ 	</servlet>
+ 	<servlet>
+ 		<servlet-name>UserServlet</servlet-name>
+ 		<servlet-class>restool.servlet.UserServlet</servlet-class>
+ 	</servlet>
+ 	<servlet>
+ 		<servlet-name>UserTestServlet</servlet-name>
+ 		<servlet-class>restool.servlet.UserTestServlet</servlet-class>
+ 	</servlet>
+ 	<servlet>
+ 		<servlet-name>UploadServlet</servlet-name>
+ 		<servlet-class>restool.servlet.UploadServlet</servlet-class>
+ 	</servlet>
+ 	<servlet>
+ 		<servlet-name>EnvServlet</servlet-name>
+ 		<servlet-class>restool.servlet.EnvServlet</servlet-class>
+ 	</servlet>
+ 	
+	<servlet>
+		<servlet-name>XFireServlet</servlet-name>
+		<servlet-class>
+			org.codehaus.xfire.transport.http.XFireConfigurableServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+ 	  
+ 	<!-- flex -->
+ 	<!--
+ 	<servlet-mapping>
+        <servlet-name>FlexMxmlServlet</servlet-name>
+        <url-pattern>*.mxml</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FlexSwfServlet</servlet-name>
+        <url-pattern>*.swf</url-pattern>
+    </servlet-mapping>
+    -->
+    
+ 	<servlet-mapping>  
+        <servlet-name>IpInfoServlet</servlet-name>  
+        <url-pattern>/ip</url-pattern>  
+ 	</servlet-mapping>
+    
+ 	<servlet-mapping>  
+        <servlet-name>VideoAdapterServlet</servlet-name>  
+        <url-pattern>/videoadapter</url-pattern>  
+ 	</servlet-mapping>
+    
+ 	<servlet-mapping>  
+        <servlet-name>MachineInfoServlet</servlet-name>  
+        <url-pattern>/mis</url-pattern>  
+ 	</servlet-mapping>
+ 
+ 	<servlet-mapping>  
+        <servlet-name>ServiceServlet</servlet-name>  
+        <url-pattern>/serviceServlet</url-pattern>  
+ 	</servlet-mapping>  
+ 	<servlet-mapping>  
+        <servlet-name>ActionListenServlet</servlet-name>  
+        <url-pattern>/ActionListenServlet</url-pattern>  
+ 	</servlet-mapping>
+ 	<servlet-mapping>
+ 		<servlet-name>DbLogServlet</servlet-name>
+ 		<url-pattern>/dbLogServlet</url-pattern>
+ 	</servlet-mapping> 
+ 	<servlet-mapping>
+ 		<servlet-name>UserServlet</servlet-name>
+ 		<url-pattern>/userServlet</url-pattern>
+ 	</servlet-mapping> 
+ 	<servlet-mapping>
+ 		<servlet-name>UserTestServlet</servlet-name>
+ 		<url-pattern>/userTestServlet</url-pattern>
+ 	</servlet-mapping> 
+ 	<servlet-mapping>
+ 		<servlet-name>UploadServlet</servlet-name>
+ 		<url-pattern>/uploadServlet</url-pattern>
+ 	</servlet-mapping> 
+ 	<servlet-mapping>
+ 		<servlet-name>EnvServlet</servlet-name>
+ 		<url-pattern>/envServlet</url-pattern>
+ 	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>XFireServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MessageBrokerServlet</servlet-name>
+        <url-pattern>/messagebroker/*</url-pattern>
+    </servlet-mapping>
+</web-app>

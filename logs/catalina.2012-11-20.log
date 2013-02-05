@@ -1,0 +1,568 @@
+Nov 20, 2012 3:02:00 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 3:02:00 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:02:01 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:02:01 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1354 ms
+Nov 20, 2012 3:02:01 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 3:02:01 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 3:02:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/manager
+Nov 20, 2012 3:02:53 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [51,354] milliseconds.
+Nov 20, 2012 3:02:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/examples
+Nov 20, 2012 3:02:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 3:02:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/host-manager
+Nov 20, 2012 3:02:53 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/docs
+Nov 20, 2012 3:02:53 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:02:53 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:02:53 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 52536 ms
+Nov 20, 2012 3:09:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/qmsserver
+Nov 20, 2012 3:15:34 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 20, 2012 3:15:34 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:15:34 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:15:34 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/qmsserver] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [Thread-3] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2faadcc6]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@7a84639c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@9a7d59b]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.MessageRepository#42274], EntityKey[com.adobe.qms.dao.MessageRepository#42273], EntityKey[com.adobe.qms.dao.MessageRepository#42272], EntityKey[com.adobe.qms.dao.MessageRepository#42271], EntityKey[com.adobe.qms.dao.MessageRepository#42270], EntityKey[com.adobe.qms.dao.MessageRepository#42269], EntityKey[com.adobe.qms.dao.MessageRepository#42264], EntityKey[com.adobe.qms.dao.MessageRepository#42265], EntityKey[com.adobe.qms.dao.MessageRepository#42267], EntityKey[com.adobe.qms.dao.MessageRepository#42268]],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2faadcc6]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@7a84639c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@9a7d59b]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.MessageRepository#42274], EntityKey[com.adobe.qms.dao.MessageRepository#42273], EntityKey[com.adobe.qms.dao.MessageRepository#42272], EntityKey[com.adobe.qms.dao.MessageRepository#42271], EntityKey[com.adobe.qms.dao.MessageRepository#42270], EntityKey[com.adobe.qms.dao.MessageRepository#42269], EntityKey[com.adobe.qms.dao.MessageRepository#42264], EntityKey[com.adobe.qms.dao.MessageRepository#42265], EntityKey[com.adobe.qms.dao.MessageRepository#42267], EntityKey[com.adobe.qms.dao.MessageRepository#42268]],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2faadcc6]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@7a84639c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@9a7d59b]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.ProductTeam#PS-ASC]],collectionKeys=[CollectionKey[com.adobe.qms.dao.ProductTeam.machines#PS-ASC], CollectionKey[com.adobe.qms.dao.ProductTeam.users#PS-ASC]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2faadcc6]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@7a84639c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@9a7d59b]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.User#yxli]],collectionKeys=[CollectionKey[com.adobe.qms.dao.User.clouds#yxli], CollectionKey[com.adobe.qms.dao.User.machines#yxli], CollectionKey[com.adobe.qms.dao.User.labMachines#yxli], CollectionKey[com.adobe.qms.dao.User.machineLists#yxli], CollectionKey[com.adobe.qms.dao.User.jobs#yxli]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2faadcc6]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@7a84639c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@9a7d59b]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.User#yxli], EntityKey[com.adobe.qms.dao.ProductTeam#PS-ASC]],collectionKeys=[CollectionKey[com.adobe.qms.dao.ProductTeam.users#PS-ASC], CollectionKey[com.adobe.qms.dao.User.machineLists#yxli], CollectionKey[com.adobe.qms.dao.User.clouds#yxli], CollectionKey[com.adobe.qms.dao.User.labMachines#yxli], CollectionKey[com.adobe.qms.dao.User.machines#yxli], CollectionKey[com.adobe.qms.dao.ProductTeam.machines#PS-ASC], CollectionKey[com.adobe.qms.dao.User.jobs#yxli]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7099e017]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@6473fc2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e3c58a9]) and a value of type [flex.messaging.MessageBroker] (value [flex.messaging.MessageBroker@4be0ef94]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:15:34 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:15:34 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:15:34 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:15:34 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:16:13 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 3:16:13 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:16:13 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:16:13 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1088 ms
+Nov 20, 2012 3:16:13 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 3:16:13 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 3:16:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/manager
+Nov 20, 2012 3:17:17 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [63,086] milliseconds.
+Nov 20, 2012 3:17:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/examples
+Nov 20, 2012 3:17:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 3:17:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/host-manager
+Nov 20, 2012 3:17:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/qmsserver
+Nov 20, 2012 3:17:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/docs
+Nov 20, 2012 3:17:23 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:17:23 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:17:23 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 69177 ms
+Nov 20, 2012 3:22:33 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context []
+Nov 20, 2012 3:22:33 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] has started
+Nov 20, 2012 3:22:36 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [] is completed
+Nov 20, 2012 3:23:59 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 20, 2012 3:23:59 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:23:59 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:23:59 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/qmsserver] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [Thread-2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@46d8dc2e]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@475f7458]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4bcf6203]) and a value of type [flex.messaging.MessageBroker] (value [flex.messaging.MessageBroker@1c2bd9d7]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:23:59 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:23:59 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:23:59 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:23:59 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:24:06 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 3:24:06 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:24:06 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:24:06 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1644 ms
+Nov 20, 2012 3:24:06 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 3:24:06 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 3:24:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/manager
+Nov 20, 2012 3:24:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/examples
+Nov 20, 2012 3:24:08 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 3:24:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/host-manager
+Nov 20, 2012 3:24:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/qmsserver
+Nov 20, 2012 3:24:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/docs
+Nov 20, 2012 3:24:19 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:24:19 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 20, 2012 3:24:19 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 13009 ms
+Nov 20, 2012 3:27:19 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/qmsserver]
+Nov 20, 2012 3:27:19 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/qmsserver] has started
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/qmsserver] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4fd74bb1]) and a value of type [flex.messaging.MessageBroker] (value [flex.messaging.MessageBroker@3faa7a6a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@73a2335d]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.ProductTeam#PS-ASC]],collectionKeys=[CollectionKey[com.adobe.qms.dao.ProductTeam.machines#PS-ASC], CollectionKey[com.adobe.qms.dao.ProductTeam.users#PS-ASC]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6a493b65]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@6dda9a66]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6a493b65]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@6dda9a66]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@73a2335d]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.User#yxli]],collectionKeys=[CollectionKey[com.adobe.qms.dao.User.clouds#yxli], CollectionKey[com.adobe.qms.dao.User.machines#yxli], CollectionKey[com.adobe.qms.dao.User.labMachines#yxli], CollectionKey[com.adobe.qms.dao.User.machineLists#yxli], CollectionKey[com.adobe.qms.dao.User.jobs#yxli]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6a493b65]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@6dda9a66]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@73a2335d]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.MessageRepository#42274], EntityKey[com.adobe.qms.dao.MessageRepository#42273], EntityKey[com.adobe.qms.dao.MessageRepository#42272], EntityKey[com.adobe.qms.dao.MessageRepository#42271], EntityKey[com.adobe.qms.dao.MessageRepository#42270], EntityKey[com.adobe.qms.dao.MessageRepository#42269], EntityKey[com.adobe.qms.dao.MessageRepository#42264], EntityKey[com.adobe.qms.dao.MessageRepository#42265], EntityKey[com.adobe.qms.dao.MessageRepository#42267], EntityKey[com.adobe.qms.dao.MessageRepository#42268]],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6a493b65]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@6dda9a66]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:19 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@514ae5cd]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@c351f6d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:27:24 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/qmsserver] is completed
+Nov 20, 2012 3:29:32 AM org.apache.catalina.loader.WebappClassLoader loadClass
+INFO: Illegal access: this web application instance has been stopped already.  Could not load com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1600)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1559)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkIdleResources(BasicResourcePool.java:1481)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$2000(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$CheckIdleResourcesTask.run(BasicResourcePool.java:1964)
+	at java.util.TimerThread.mainLoop(Timer.java:534)
+	at java.util.TimerThread.run(Timer.java:484)
+Nov 20, 2012 3:44:02 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 3:44:03 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:44:03 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1086 ms
+Nov 20, 2012 3:44:03 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 3:44:03 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 3:44:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/manager
+Nov 20, 2012 3:45:06 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [62,029] milliseconds.
+Nov 20, 2012 3:45:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/examples
+Nov 20, 2012 3:45:06 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 3:45:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/host-manager
+Nov 20, 2012 3:45:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/qmsserver
+Nov 20, 2012 3:45:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/docs
+Nov 20, 2012 3:45:17 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 3:45:17 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 73951 ms
+Nov 20, 2012 3:48:25 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 3:48:25 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8082"]
+Nov 20, 2012 3:48:25 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1086 ms
+Nov 20, 2012 3:48:25 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 3:48:25 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 3:48:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/manager
+Nov 20, 2012 3:48:26 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/examples
+Nov 20, 2012 3:48:26 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 3:48:32 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/host-manager
+Nov 20, 2012 3:48:32 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/qmsserver
+Nov 20, 2012 3:48:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/docs
+Nov 20, 2012 3:48:35 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8082"]
+Nov 20, 2012 3:48:35 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9596 ms
+Nov 20, 2012 3:50:16 AM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/docs]
+Nov 20, 2012 3:50:16 AM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/examples]
+Nov 20, 2012 3:50:27 AM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/host-manager]
+Nov 20, 2012 3:50:28 AM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/qmsserver]
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/qmsserver] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2b5d70ae]) and a value of type [flex.messaging.MessageBroker] (value [flex.messaging.MessageBroker@390c5c0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@15a6c214]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@770fba26]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@15a6c214]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@770fba26]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@15a6c214]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@770fba26]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@15a6c214]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@770fba26]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@15a6c214]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@770fba26]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@15a6c214]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@770fba26]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:28 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/qmsserver] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@15a6c214]) and a value of type [flex.messaging.config.SystemSettings] (value [flex.messaging.config.SystemSettings@770fba26]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 3:50:29 AM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/manager]
+Nov 20, 2012 9:59:02 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 9:59:03 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 9:59:03 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1078 ms
+Nov 20, 2012 9:59:03 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 9:59:03 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 9:59:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 9:59:08 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 9:59:08 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5814 ms
+Nov 20, 2012 9:59:52 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 9:59:52 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Thread-2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1a1a7aa4]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@4069b25f]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5b3d9c02]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 9:59:52 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 9:59:52 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:02:26 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 10:02:26 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:02:26 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1059 ms
+Nov 20, 2012 10:02:26 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 10:02:26 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 10:02:26 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 10:02:32 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:02:32 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5747 ms
+Nov 20, 2012 10:18:18 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:18:18 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Thread-2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@53d9f80]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@10b28f30]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@3ad6a0e0]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 10:18:18 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:18:18 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:18:57 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 10:18:57 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:18:57 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1073 ms
+Nov 20, 2012 10:18:57 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 10:18:57 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 10:18:57 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 10:19:55 AM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [53,990] milliseconds.
+Nov 20, 2012 10:19:57 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 10:19:57 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 59646 ms
+Nov 20, 2012 12:21:04 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 12:21:04 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Thread-2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7a3e72]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@5999ae9c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7896b1b8]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 12:21:04 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 12:21:04 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 11:05:07 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Nov 20, 2012 11:05:07 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 11:05:07 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1071 ms
+Nov 20, 2012 11:05:08 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 20, 2012 11:05:08 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+Nov 20, 2012 11:05:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/apache-tomcat-7.0.32/webapps/ROOT
+Nov 20, 2012 11:06:14 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [62,603] milliseconds.
+Nov 20, 2012 11:06:16 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 11:06:16 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 68334 ms
+Nov 20, 2012 11:06:48 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 11:06:48 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Thread-2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [RedeployManager] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@64dc420b]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@387413e8]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4cc7014c]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.Machine#00-23-AE-A9-BC-FF], EntityKey[com.adobe.qms.dao.MachineList#90], EntityKey[com.adobe.qms.dao.Machine#00-18-8B-27-1C-28], EntityKey[com.adobe.qms.dao.MachineList#92], EntityKey[com.adobe.qms.dao.MachineList#91], EntityKey[com.adobe.qms.dao.Machine#00-21-9B-31-19-75], EntityKey[com.adobe.qms.dao.MachineList#93], EntityKey[com.adobe.qms.dao.Machine#00-24-e8-32-d0-1c], EntityKey[com.adobe.qms.dao.Machine#00-13-72-2F-5C-10], EntityKey[com.adobe.qms.dao.Machine#00-26-4a-0d-b6-38], EntityKey[com.adobe.qms.dao.Machine#00-1D-09-00-04-8E], EntityKey[com.adobe.qms.dao.Machine#00-15-5D-7B-CB-02], EntityKey[com.adobe.qms.dao.Machine#00-25-00-f4-8f-90], EntityKey[com.adobe.qms.dao.Machine#00-25-00-ab-3f-24], EntityKey[com.adobe.qms.dao.Machine#00-25-64-AA-EE-06], EntityKey[com.adobe.qms.dao.Machine#00-1b-63-b8-0e-f9], EntityKey[com.adobe.qms.dao.Machine#00-26-bb-5a-13-d2], EntityKey[com.adobe.qms.dao.Machine#22-aa-dd-35-e3-3e], EntityKey[com.adobe.qms.dao.LabMachine#23], EntityKey[com.adobe.qms.dao.User#yxli], EntityKey[com.adobe.qms.dao.LabMachine#22], EntityKey[com.adobe.qms.dao.Machine#00-1A-A0-D1-16-D0], EntityKey[com.adobe.qms.dao.Machine#00-18-8b-27-1c-28], EntityKey[com.adobe.qms.dao.LabMachine#25], EntityKey[com.adobe.qms.dao.Machine#00-22-68-0a-fb-27], EntityKey[com.adobe.qms.dao.LabMachine#24], EntityKey[com.adobe.qms.dao.Machine#00-26-4a-0d-6a-04], EntityKey[com.adobe.qms.dao.LabMachine#18], EntityKey[com.adobe.qms.dao.Machine#00-23-ae-a9-bd-b0], EntityKey[com.adobe.qms.dao.LabMachine#20], EntityKey[com.adobe.qms.dao.LabMachine#15], EntityKey[com.adobe.qms.dao.LabMachine#14], EntityKey[com.adobe.qms.dao.LabMachine#17], EntityKey[com.adobe.qms.dao.LabMachine#16], EntityKey[com.adobe.qms.dao.LabMachine#11], EntityKey[com.adobe.qms.dao.LabMachine#10], EntityKey[com.adobe.qms.dao.LabMachine#13], EntityKey[com.adobe.qms.dao.LabMachine#8], EntityKey[com.adobe.qms.dao.LabMachine#9], EntityKey[com.adobe.qms.dao.LabMachine#3], EntityKey[com.adobe.qms.dao.Machine#00-23-AE-A9-BC-C3]],collectionKeys=[CollectionKey[com.adobe.qms.dao.Machine.jobs#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-13-72-2F-5C-10], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-26-4a-0d-b6-38], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-18-8b-27-1c-28], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-64-AA-EE-06], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-1b-63-b8-0e-f9], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-64-AA-EE-06], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-24-e8-32-d0-1c], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-18-8b-27-1c-28], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-ae-a9-bd-b0], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-26-4a-0d-b6-38], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-ae-a9-bd-b0], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-26-bb-5a-13-d2], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-64-AA-EE-06], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-1b-63-b8-0e-f9], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-24-e8-32-d0-1c], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.User.jobs#yxli], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-26-bb-5a-13-d2], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#22-aa-dd-35-e3-3e], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.jobs#22-aa-dd-35-e3-3e], CollectionKey[com.adobe.qms.dao.User.labMachines#yxli], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-22-68-0a-fb-27], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-24-e8-32-d0-1c], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-18-8b-27-1c-28], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.User.machines#yxli], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-22-68-0a-fb-27], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-26-bb-5a-13-d2], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-22-68-0a-fb-27], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-26-4a-0d-b6-38], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-26-bb-5a-13-d2], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-22-68-0a-fb-27], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-24-e8-32-d0-1c], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-22-68-0a-fb-27], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-13-72-2F-5C-10], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-13-72-2F-5C-10], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-64-AA-EE-06], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-18-8b-27-1c-28], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-26-bb-5a-13-d2], CollectionKey[com.adobe.qms.dao.User.clouds#yxli], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-1b-63-b8-0e-f9], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-18-8b-27-1c-28], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-ae-a9-bd-b0], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#22-aa-dd-35-e3-3e], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-13-72-2F-5C-10], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-ae-a9-bd-b0], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-64-AA-EE-06], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-13-72-2F-5C-10], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-1b-63-b8-0e-f9], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-24-e8-32-d0-1c], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-ae-a9-bd-b0], CollectionKey[com.adobe.qms.dao.User.machineLists#yxli], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.labMachines#22-aa-dd-35-e3-3e], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.machineLists#22-aa-dd-35-e3-3e], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-26-4a-0d-b6-38], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-26-4a-0d-b6-38], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-1b-63-b8-0e-f9]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@64dc420b]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@387413e8]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4cc7014c]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(<closed>)]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@64dc420b]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@387413e8]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4cc7014c]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adobe.qms.dao.Machine#00-23-AE-A9-BC-FF], EntityKey[com.adobe.qms.dao.Machine#00-18-8B-27-1C-28], EntityKey[com.adobe.qms.dao.Machine#22-AA-DD-35-E3-3E], EntityKey[com.adobe.qms.dao.Machine#00-21-9B-31-19-75], EntityKey[com.adobe.qms.dao.Machine#00-1D-09-00-06-F6], EntityKey[com.adobe.qms.dao.Machine#00-18-8B-05-19-F5], EntityKey[com.adobe.qms.dao.Machine#00-25-00-aa-ea-58], EntityKey[com.adobe.qms.dao.Machine#00-1D-09-00-04-8E], EntityKey[com.adobe.qms.dao.Machine#00-15-5D-7B-CB-05], EntityKey[com.adobe.qms.dao.ProductTeam#PS-ASC], EntityKey[com.adobe.qms.dao.Machine#00-50-56-97-01-4E], EntityKey[com.adobe.qms.dao.Machine#00-24-E8-32-D0-1C], EntityKey[com.adobe.qms.dao.Machine#00-15-5D-7B-CB-02], EntityKey[com.adobe.qms.dao.Machine#00-25-00-f4-8f-90], EntityKey[com.adobe.qms.dao.Machine#00-25-00-ab-3f-24], EntityKey[com.adobe.qms.dao.Machine#00-26-4a-0d-ba-d2], EntityKey[com.adobe.qms.dao.Machine#00-23-AE-A9-BD-B0], EntityKey[com.adobe.qms.dao.Machine#00-23-32-97-ec-80], EntityKey[com.adobe.qms.dao.Machine#00-25-4b-b4-d9-36], EntityKey[com.adobe.qms.dao.Machine#00-1A-A0-D1-16-D0], EntityKey[com.adobe.qms.dao.Machine#00-26-4a-0d-6a-04], EntityKey[com.adobe.qms.dao.Machine#00-16-cb-9f-fc-19], EntityKey[com.adobe.qms.dao.Machine#00-22-68-0A-FB-27], EntityKey[com.adobe.qms.dao.Machine#00-26-4a-0d-6d-4a], EntityKey[com.adobe.qms.dao.Machine#00-23-AE-93-A6-22], EntityKey[com.adobe.qms.dao.Machine#00-50-56-97-07-6A], EntityKey[com.adobe.qms.dao.Machine#00-24-E8-32-C1-58], EntityKey[com.adobe.qms.dao.Machine#00-25-4b-b4-d5-48], EntityKey[com.adobe.qms.dao.Machine#00-1A-A0-08-BF-35], EntityKey[com.adobe.qms.dao.Machine#00-23-AE-A9-BC-C3]],collectionKeys=[CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-AE-A9-BD-B0], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-1A-A0-08-BF-35], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-22-68-0A-FB-27], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-00-aa-ea-58], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-16-cb-9f-fc-19], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-1A-A0-08-BF-35], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-AE-A9-BD-B0], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-26-4a-0d-ba-d2], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-18-8B-05-19-F5], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-50-56-97-01-4E], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-AE-93-A6-22], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-AE-A9-BD-B0], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-32-97-ec-80], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-15-5D-7B-CB-05], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-24-E8-32-D0-1C], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-00-aa-ea-58], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-00-aa-ea-58], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-32-97-ec-80], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-32-97-ec-80], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-AE-A9-BD-B0], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-4b-b4-d9-36], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-AE-93-A6-22], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-26-4a-0d-ba-d2], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-24-E8-32-C1-58], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-22-68-0A-FB-27], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-24-E8-32-C1-58], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-22-68-0A-FB-27], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-26-4a-0d-6d-4a], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-50-56-97-07-6A], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-4b-b4-d9-36], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-18-8B-05-19-F5], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-1D-09-00-06-F6], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-26-4a-0d-6d-4a], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-32-97-ec-80], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-4b-b4-d5-48], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-50-56-97-01-4E], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#22-AA-DD-35-E3-3E], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-4b-b4-d5-48], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-15-5D-7B-CB-05], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-26-4a-0d-ba-d2], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#22-AA-DD-35-E3-3E], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-24-E8-32-C1-58], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-50-56-97-07-6A], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-18-8B-05-19-F5], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-24-E8-32-D0-1C], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-26-4a-0d-6d-4a], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-16-cb-9f-fc-19], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.labMachines#22-AA-DD-35-E3-3E], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-1A-A0-08-BF-35], CollectionKey[com.adobe.qms.dao.Machine.jobs#22-AA-DD-35-E3-3E], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-1A-A0-08-BF-35], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-26-4a-0d-ba-d2], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-26-4a-0d-6d-4a], CollectionKey[com.adobe.qms.dao.Machine.machineLists#22-AA-DD-35-E3-3E], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-1D-09-00-06-F6], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-00-aa-ea-58], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-50-56-97-07-6A], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-AE-A9-BD-B0], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-24-E8-32-D0-1C], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-26-4a-0d-ba-d2], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-18-8B-05-19-F5], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-18-8B-05-19-F5], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-24-E8-32-C1-58], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-32-97-ec-80], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-16-cb-9f-fc-19], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-AE-A9-BC-C3], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-4b-b4-d9-36], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-1A-A0-D1-16-D0], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-1D-09-00-06-F6], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-25-4b-b4-d9-36], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-16-cb-9f-fc-19], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-24-E8-32-C1-58], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-23-AE-93-A6-22], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-4b-b4-d5-48], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-22-68-0A-FB-27], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-50-56-97-07-6A], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-16-cb-9f-fc-19], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-15-5D-7B-CB-05], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-00-aa-ea-58], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-1A-A0-08-BF-35], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-15-5D-7B-CB-02], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-AE-93-A6-22], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-50-56-97-01-4E], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-21-9B-31-19-75], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-15-5D-7B-CB-05], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.ProductTeam.users#PS-ASC], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-18-8B-27-1C-28], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-1D-09-00-04-8E], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-4b-b4-d5-48], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-22-68-0A-FB-27], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-1D-09-00-06-F6], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-25-00-ab-3f-24], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-50-56-97-07-6A], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-50-56-97-01-4E], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-26-4a-0d-6a-04], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-24-E8-32-D0-1C], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-23-AE-A9-BC-FF], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-25-4b-b4-d5-48], CollectionKey[com.adobe.qms.dao.Machine.machineLists#00-25-00-f4-8f-90], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-26-4a-0d-6d-4a], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-1D-09-00-06-F6], CollectionKey[com.adobe.qms.dao.Machine.jobs#00-23-AE-93-A6-22], CollectionKey[com.adobe.qms.dao.Machine.labMachines#00-50-56-97-01-4E], CollectionKey[com.adobe.qms.dao.Machine.cloudLists#00-25-4b-b4-d9-36], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-15-5D-7B-CB-05], CollectionKey[com.adobe.qms.dao.ProductTeam.machines#PS-ASC], CollectionKey[com.adobe.qms.dao.Machine.autoMachines#00-24-E8-32-D0-1C]]];ActionQueue[insertions=[] updates=[] deletions=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[]])]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@64dc420b]) and a value of type [org.codehaus.xfire.service.Service] (value [org.codehaus.xfire.service.Service@387413e8]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4cc7014c]) and a value of type [org.hibernate.impl.SessionImpl] (value [SessionImpl(<closed>)]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Nov 20, 2012 11:06:48 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 20, 2012 11:06:48 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]

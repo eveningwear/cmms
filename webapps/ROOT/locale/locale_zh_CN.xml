@@ -1,0 +1,54 @@
+<locale>
+  <!--locale definition>
+  <s key="English">英语</s>
+  <s key="Simplified Chinese">简体中文</s>
+  <s key="Traditional Chinese">繁体中文</s-->
+  
+  <s key="English">English</s>
+  <s key="Simplified Chinese">简体中文</s>
+  <s key="Traditional Chinese">繁體中文</s>
+  
+  <s key="PanelStyle">normalPanel</s>
+  
+  <s key="NomoralFontFamily">宋体</s>
+  <s key="NomoralFontSize">12</s>
+  <s key="NomoralFontWeight">normal</s>
+  <s key="Login User">用户名 (别名):</s>
+  <s key="Get Help">帮助</s>
+  <s key="Hello">您好</s>
+  <s key="Sign off">退出</s>
+  <s key="Assembler">任务装配</s>
+  <s key="LabMaker">机房管理</s>
+  <s key="IP Address">IP地址</s>
+  <s key="welcome to use">欢迎使用</s>
+  
+  <s key="Machine Tree">机器面板</s>
+  <s key="Machine Properties">机器属性</s>
+  <s key="Task List">任务列表</s>
+  <s key="Target Machine">目标机器</s>
+  <s key="Task Queue">任务队列</s>
+  <s key="Job Options">作业选项</s>
+  
+  <s key="Job Title">作业标题</s>
+  <s key="Schedule">时间调度</s>
+  <s key="Timezone">时区</s>
+  <s key="Hour">小时</s>
+  <s key="Minute">分钟</s>
+  <s key="Run now">立即</s>
+  <s key="Once at">按次</s>
+  <s key="Daily">按天</s>
+  <s key="Weekly">按周</s>
+  <s key="Monthly">按月</s>
+  <s key="minutes">分钟</s>
+  <s key="Timeout after">超时</s>
+  <s key="Job Summary">作业总结</s>
+  <s key="Profile">预设作业</s>
+  <s key="Open">打开</s>
+  <s key="Update">更新</s>
+  <s key="Save as">存储为</s>
+  <s key="Private">个人</s>
+  <s key="Public">公开</s>
+  
+  <s key="property">属性</s>
+  <s key="value">值</s>
+</locale>

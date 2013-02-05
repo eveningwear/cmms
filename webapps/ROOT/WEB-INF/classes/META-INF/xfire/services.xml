@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>qmsService</name>
+		<serviceClass>com.adobe.qms.webservice.IQMSService</serviceClass>
+		<implementationClass>
+			com.adobe.qms.webservice.QMSServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>	
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>buildService</name>
+		<serviceClass>com.adobe.qms.webservice.IBuildService</serviceClass>
+		<implementationClass>
+			com.adobe.qms.webservice.BuildServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>qmsAutoService</name>
+		<serviceClass>com.adobe.qms.webservice.IQMSAutoService</serviceClass>
+		<implementationClass>
+			com.adobe.qms.webservice.QMSAutoServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>qmsControlService</name>
+		<serviceClass>com.adobe.qms.webservice.IQMSControlService</serviceClass>
+		<implementationClass>
+			com.adobe.qms.webservice.QMSControlServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0">
+		<name>qmsCloudService</name>
+		<serviceClass>com.adobe.qms.webservice.IQMSCloudService</serviceClass>
+		<implementationClass>
+			com.adobe.qms.webservice.QMSCloudServiceImpl
+		</implementationClass>
+		<style>wrapped</style>
+		<use>literal</use>
+		<scope>application</scope>
+	</service>
+</beans>

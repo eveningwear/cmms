@@ -1,0 +1,171 @@
+Nov 20, 2012 3:02:53 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Nov 20, 2012 3:02:53 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Nov 20, 2012 3:02:53 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@3e68cd79')
+Nov 20, 2012 3:15:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Nov 20, 2012 3:15:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Nov 20, 2012 3:15:34 AM org.apache.catalina.core.ApplicationContext log
+SEVERE: Servlet MessageBrokerServlet threw unload() exception
+javax.servlet.ServletException: Servlet.destroy() for servlet MessageBrokerServlet threw exception
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1485)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1822)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5463)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:636)
+Caused by: java.lang.NullPointerException
+	at flex.messaging.services.MessageService.incrementMessageCount(MessageService.java:785)
+	at flex.messaging.services.MessageService.serviceCommand(MessageService.java:278)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:738)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:662)
+	at flex.messaging.services.messaging.SubscriptionManager.removeSubscriber(SubscriptionManager.java:363)
+	at flex.messaging.services.messaging.SubscriptionManager.destroy(SubscriptionManager.java:116)
+	at flex.messaging.MessageDestination.stop(MessageDestination.java:129)
+	at flex.messaging.services.AbstractService.stopDestinations(AbstractService.java:669)
+	at flex.messaging.services.AbstractService.stop(AbstractService.java:187)
+	at flex.messaging.MessageBroker.stopServices(MessageBroker.java:1373)
+	at flex.messaging.MessageBroker.stop(MessageBroker.java:327)
+	at flex.messaging.MessageBrokerServlet.destroy(MessageBrokerServlet.java:294)
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1464)
+	... 11 more
+Nov 20, 2012 3:17:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Nov 20, 2012 3:17:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Nov 20, 2012 3:17:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@16edbe39')
+Nov 20, 2012 3:23:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Nov 20, 2012 3:23:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Nov 20, 2012 3:23:59 AM org.apache.catalina.core.ApplicationContext log
+SEVERE: Servlet MessageBrokerServlet threw unload() exception
+javax.servlet.ServletException: Servlet.destroy() for servlet MessageBrokerServlet threw exception
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1485)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1822)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5463)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:636)
+Caused by: java.lang.NullPointerException
+	at flex.messaging.services.MessageService.incrementMessageCount(MessageService.java:785)
+	at flex.messaging.services.MessageService.serviceCommand(MessageService.java:278)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:738)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:662)
+	at flex.messaging.services.messaging.SubscriptionManager.removeSubscriber(SubscriptionManager.java:363)
+	at flex.messaging.services.messaging.SubscriptionManager.destroy(SubscriptionManager.java:116)
+	at flex.messaging.MessageDestination.stop(MessageDestination.java:129)
+	at flex.messaging.services.AbstractService.stopDestinations(AbstractService.java:669)
+	at flex.messaging.services.AbstractService.stop(AbstractService.java:187)
+	at flex.messaging.MessageBroker.stopServices(MessageBroker.java:1373)
+	at flex.messaging.MessageBroker.stop(MessageBroker.java:327)
+	at flex.messaging.MessageBrokerServlet.destroy(MessageBrokerServlet.java:294)
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1464)
+	... 11 more
+Nov 20, 2012 3:24:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Nov 20, 2012 3:24:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Nov 20, 2012 3:24:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@558041e0')
+Nov 20, 2012 3:27:19 AM org.apache.catalina.core.ApplicationContext log
+SEVERE: Servlet MessageBrokerServlet threw unload() exception
+javax.servlet.ServletException: Servlet.destroy() for servlet MessageBrokerServlet threw exception
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1485)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1822)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5463)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3913)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1262)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1431)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:301)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:636)
+Caused by: java.lang.NullPointerException
+	at flex.messaging.services.MessageService.incrementMessageCount(MessageService.java:785)
+	at flex.messaging.services.MessageService.serviceCommand(MessageService.java:278)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:738)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:662)
+	at flex.messaging.services.messaging.SubscriptionManager.removeSubscriber(SubscriptionManager.java:363)
+	at flex.messaging.services.messaging.SubscriptionManager.destroy(SubscriptionManager.java:116)
+	at flex.messaging.MessageDestination.stop(MessageDestination.java:129)
+	at flex.messaging.services.AbstractService.stopDestinations(AbstractService.java:669)
+	at flex.messaging.services.AbstractService.stop(AbstractService.java:187)
+	at flex.messaging.MessageBroker.stopServices(MessageBroker.java:1373)
+	at flex.messaging.MessageBroker.stop(MessageBroker.java:327)
+	at flex.messaging.MessageBrokerServlet.destroy(MessageBrokerServlet.java:294)
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1464)
+	... 15 more
+Nov 20, 2012 3:45:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Nov 20, 2012 3:45:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Nov 20, 2012 3:45:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@576504fa')
+Nov 20, 2012 3:48:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Nov 20, 2012 3:48:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Nov 20, 2012 3:48:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@2e864e43')
+Nov 20, 2012 3:50:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Nov 20, 2012 3:50:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Nov 20, 2012 3:50:28 AM org.apache.catalina.core.ApplicationContext log
+SEVERE: Servlet MessageBrokerServlet threw unload() exception
+javax.servlet.ServletException: Servlet.destroy() for servlet MessageBrokerServlet threw exception
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1485)
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1822)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5463)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1028)
+	at org.apache.catalina.startup.HostConfig.deleteRedeployResources(HostConfig.java:1291)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1242)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1431)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:301)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:636)
+Caused by: java.lang.NullPointerException
+	at flex.messaging.services.MessageService.incrementMessageCount(MessageService.java:785)
+	at flex.messaging.services.MessageService.serviceCommand(MessageService.java:278)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:738)
+	at flex.messaging.MessageClient.invalidate(MessageClient.java:662)
+	at flex.messaging.services.messaging.SubscriptionManager.removeSubscriber(SubscriptionManager.java:363)
+	at flex.messaging.services.messaging.SubscriptionManager.destroy(SubscriptionManager.java:116)
+	at flex.messaging.MessageDestination.stop(MessageDestination.java:129)
+	at flex.messaging.services.AbstractService.stopDestinations(AbstractService.java:669)
+	at flex.messaging.services.AbstractService.stop(AbstractService.java:187)
+	at flex.messaging.MessageBroker.stopServices(MessageBroker.java:1373)
+	at flex.messaging.MessageBroker.stop(MessageBroker.java:327)
+	at flex.messaging.MessageBrokerServlet.destroy(MessageBrokerServlet.java:294)
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1464)
+	... 16 more

@@ -1,0 +1,17 @@
+﻿<locale>  
+  <!--locale definition>
+  <s key="English">English</s>
+  <s key="Simplified Chinese">Simplified Chinese</s>
+  <s key="Traditional Chinese">Traditional Chinese</s-->  
+  
+  <s key="English">English</s>
+  <s key="Simplified Chinese">简体中文</s>
+  <s key="Traditional Chinese">繁體中文</s>
+  
+  <s key="PanelStyle">boldPanel</s>
+  
+  <s key="NomoralFontFamily">Verdana</s>
+  <s key="NomoralFontSize">11</s>
+  <s key="NomoralFontWeight">bold</s>
+  <s key="Login User">Login User (Alias):</s>
+</locale>
